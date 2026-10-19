@@ -16,26 +16,36 @@
 
 <body>
 
-    <!-- Sidhuvud -->
-    <header class="site-header">
+    
+<header class="site-header">
 
-        <a href="index.html" class="logo">
-            LA CASA<br>
-            RISTORANTE
+    <a href="index.html" class="logo">
+        LA CASA<br>RISTORANTE
+    </a>
+
+    <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Öppna menyn"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="navigation" id="main-navigation">
+        <a href="index.html">Hem</a>
+        <a href="meny.html">Meny</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="kontakt.html#kontaktformular" class="booking-button">
+            Boka bord
         </a>
+    </nav>
 
-        <nav class="navigation" id="main-navigation">
-            <a href="index.html">Hem</a>
-            <a href="meny.html">Meny</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="kontakt.html#kontaktformular" class="booking-button">
-                Boka bord
-            </a>
-        </nav>
+</header>
 
-    </header>
-
-    <!-- Sidans huvudinnehåll -->
     <main>
 
         <!-- Stor bild och huvudrubrik -->

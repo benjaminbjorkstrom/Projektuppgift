@@ -347,4 +347,64 @@ a {
 }
 
 
+/* Mobilmenyknapp – dold på större skärmar */
+.menu-toggle {
+    display: none;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 6px 0;
+    background-color: var(--gold);
+}
+
+/* Mobilanpassning av navigationen */
+@media (max-width: 600px) {
+    .site-header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        justify-self: end;
+    }
+
+    .navigation {
+        display: none;
+        grid-column: 1 / -1;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .navigation.is-open {
+        display: flex;
+    }
+
+    .navigation a {
+        padding: 0.85rem 0;
+        text-align: center;
+        border-top: 1px solid rgba(185, 154, 90, 0.3);
+    }
+
+    .navigation .booking-button {
+        margin-top: 0.5rem;
+        padding: 0.8rem;
+        border: 1px solid var(--gold);
+    }
+}
+
+
+
 
