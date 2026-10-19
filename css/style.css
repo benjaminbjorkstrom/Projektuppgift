@@ -241,3 +241,21 @@ a {
     margin-top: 3rem;
     text-align: center;
 }
+
+/* Sidofot */
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    padding: 2rem;
+    background-color: var(--burgundy);
+    color: var(--gold);
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.15em;
+}
