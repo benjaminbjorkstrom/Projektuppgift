@@ -86,3 +86,44 @@ a {
     background-color: var(--burgundy);
     color: white;
 }
+
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 450px;
+    padding: 4rem 3.5%;
+    overflow: hidden;
+    background-color: #38251d;
+    color: white;
+}
+
+/* Den stora bakgrundsbilden */
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Mörkt lager ovanpå bilden */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(25, 15, 12, 0.82),
+        rgba(25, 15, 12, 0.35)
+    );
+}
+
+/* Text och knapp ska ligga ovanpå bilden */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 540px;
+}
