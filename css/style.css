@@ -28,3 +28,43 @@ img {
 a {
     color: inherit;
 }
+
+/* Header och navigation */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem 3.5%;
+    background-color: var(--burgundy);
+    border-bottom: 1px solid var(--gold);
+    color: var(--gold);
+}
+
+.logo {
+    color: var(--gold);
+    font-size: 1.1rem;
+    line-height: 1.15;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+.booking-button {
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    background-color: var(--olive);
+}
