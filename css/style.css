@@ -109,21 +109,19 @@ a {
     object-position: center;
 }
 
-/* Mörkt lager ovanpå bilden */
+
+/* Mörkt lager ovanpå hela bilden */
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        90deg,
-        rgba(25, 15, 12, 0.82),
-        rgba(25, 15, 12, 0.35)
-    );
+    background: rgba(25, 15, 12, 0.55);
+    z-index: 1;
 }
 
 /* Text och knapp ska ligga ovanpå bilden */
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: 540px;
 }
