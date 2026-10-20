@@ -588,6 +588,32 @@ a {
 }
 
 
+/* Information om bordsbokning */
+.booking-note {
+    margin-top: 2rem;
+    padding: 1.3rem;
+    border-left: 3px solid var(--gold);
+    background-color: rgba(185, 154, 90, 0.1);
+}
+
+.booking-note h3 {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    color: var(--burgundy);
+    font-size: 1.2rem;
+}
+
+.booking-note p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.booking-note .button {
+    display: inline-block;
+    text-decoration: none;
+}
+
 
 
 
