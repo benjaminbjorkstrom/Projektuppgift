@@ -569,6 +569,11 @@ a {
 }
 
 @media (max-width: 600px) {
+    .site-header .menu-toggle {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
     .contact-section {
         padding-top: 2.5rem;
         padding-bottom: 3rem;
@@ -734,26 +739,3 @@ a {
         font-size: 0.9rem;
     }
 }
-
-
-
-
-
-
-
-
-
-@media (max-width: 600px) {
-    .site-header .menu-toggle {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        position: relative;
-        z-index: 10;
-    }
-}
-
-
-
-
-
