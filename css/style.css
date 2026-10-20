@@ -403,35 +403,56 @@ a {
 
 
     /* Maträtterna */
-    .dish-grid {
+     .dish-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1.2rem;
     }
 
     .dish-card img {
-        height: 230px;
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
     }
 
     .dish-info {
-        padding: 1rem;
+        padding: 0.9rem 1rem;
     }
 
     .dish-info h3 {
         font-size: 1.15rem;
+        line-height: 1.3;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .dish-info p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+    }
+
+    .dish-info .dish-price {
+        font-size: 1rem;
     }
 
     /* Rubriken ovanför maträtterna */
     .favorites {
-        padding-top: 2rem;
-        padding-bottom: 4rem;
+        padding: 1.5rem 5% 2.5rem;
     }
 
     .section-heading {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-heading .eyebrow {
+        font-size: 0.8rem;
+        letter-spacing: 0.12em;
     }
 
     .section-heading h2 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-top: 0.5rem;
     }
 
     /* Footer */
